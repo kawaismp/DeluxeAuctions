@@ -9,7 +9,7 @@ import me.sedattr.deluxeauctions.managers.*;
 import me.sedattr.deluxeauctions.others.Logger;
 import me.sedattr.deluxeauctions.others.TaskUtils;
 import me.sedattr.deluxeauctions.others.Utils;
-import me.sedattr.deluxeauctionsredis.RedisPlugin;
+//import me.sedattr.deluxeauctionsredis.RedisPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
@@ -266,7 +266,7 @@ public class MySQLDatabase implements DatabaseManager {
                 }
 
                 DeluxeAuctions.getInstance().loaded = true;
-                if (Bukkit.getPluginManager().isPluginEnabled("DeluxeAuctionsRedis")) {
+/*                if (Bukkit.getPluginManager().isPluginEnabled("DeluxeAuctionsRedis")) {
                     me.sedattr.deluxeauctionsredis.RedisPlugin redis = (RedisPlugin) Bukkit.getPluginManager()
                             .getPlugin("DeluxeAuctionsRedis");
                     if (redis != null && redis.isLoaded()) {
@@ -274,7 +274,7 @@ public class MySQLDatabase implements DatabaseManager {
                         Logger.sendConsoleMessage("Enabled &fDeluxeAuctions Redis %level_color%support!",
                                 Logger.LogLevel.INFO);
                     }
-                } else if (DeluxeAuctions.getInstance().configFile.getBoolean("addons.bungeecord", false)) {
+                } else*/ if (DeluxeAuctions.getInstance().configFile.getBoolean("addons.bungeecord", false)) {
                     DeluxeAuctions.getInstance().multiServerManager = new BungeeAddon();
                     Logger.sendConsoleMessage("Enabled &fDeluxeAuctions Bungee %level_color%support!",
                             Logger.LogLevel.INFO);

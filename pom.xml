@@ -232,26 +232,26 @@
         <dependency>
             <groupId>com.willfp</groupId>
             <artifactId>libreforge</artifactId>
-            <version>4.73.0</version>
+            <version>4.76.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libraries/libreforge.jar</systemPath>
         </dependency>
 
-        <dependency>
-            <groupId>fr.maxlego08.zauctionhouse</groupId>
-            <artifactId>zAuctionHouseV3</artifactId>
-            <version>3.2.1.2</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/zAuctionHouse.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>fr.maxlego08.zauctionhouse</groupId>-->
+<!--            <artifactId>zAuctionHouseV3</artifactId>-->
+<!--            <version>3.2.1.2</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/zAuctionHouse.jar</systemPath>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.edwardbelt.edprison</groupId>
-            <artifactId>EdPrison</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/EdPrison.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.edwardbelt.edprison</groupId>-->
+<!--            <artifactId>EdPrison</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/EdPrison.jar</systemPath>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.black_ixx</groupId>
@@ -260,29 +260,29 @@
             <scope>provided</scope>
         </dependency>
         
-        <dependency>
-            <groupId>me.realized</groupId>
-            <artifactId>tokenmanager</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/TokenManager.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.realized</groupId>-->
+<!--            <artifactId>tokenmanager</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/TokenManager.jar</systemPath>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>me.sedattr.deluxeauctionsredis</groupId>
-            <artifactId>deluxeauctionsredis</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/DeluxeAuctionsRedis.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.sedattr.deluxeauctionsredis</groupId>-->
+<!--            <artifactId>deluxeauctionsredis</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/DeluxeAuctionsRedis.jar</systemPath>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>me.qKing12.RoyaleEconomy</groupId>
-            <artifactId>royaleeconomy</artifactId>
-            <version>3.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/RoyaleEconomy.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.qKing12.RoyaleEconomy</groupId>-->
+<!--            <artifactId>royaleeconomy</artifactId>-->
+<!--            <version>3.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/RoyaleEconomy.jar</systemPath>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>me.qKing12.AuctionMaster</groupId>
