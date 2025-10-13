@@ -25,6 +25,7 @@ import java.util.*;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class DataHandler {
     private final File log = new File(DeluxeAuctions.getInstance().getDataFolder(), "logs.txt");
@@ -233,6 +234,14 @@ public class DataHandler {
                     ItemStack item = Utils.createItemFromSection(itemSection.getConfigurationSection(entry), null);
                     if (item == null)
                         continue;
+
+										// hide tooltip for glass(decoration) items
+										if (entry.equals("glass"))
+										{
+											ItemMeta itemMeta = item.getItemMeta();
+											itemMeta.setHideTooltip(true);
+											item.setItemMeta(itemMeta);
+										}
 
                     DeluxeAuctions.getInstance().normalItems.put(entry, item);
                 }
