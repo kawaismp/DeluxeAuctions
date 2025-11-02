@@ -242,13 +242,13 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.willfp</groupId>
-            <artifactId>libreforge</artifactId>
-            <version>4.76.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/libreforge.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.willfp</groupId>-->
+<!--            <artifactId>libreforge</artifactId>-->
+<!--            <version>4.76.1</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/libreforge.jar</systemPath>-->
+<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>fr.maxlego08.zauctionhouse</groupId>-->
