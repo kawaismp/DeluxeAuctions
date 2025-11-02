@@ -15,13 +15,30 @@
     </properties>
 
     <build>
+        <finalName>DeluxeAuctions</finalName>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
                 <version>2.14.2</version>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib</classpathPrefix>
+                            <mainClass>
+                                me.sedattr.deluxeauctions.DeluxeAuctions
+                            </mainClass>
+                        </manifest>
+                    </archive>
+                    <outputDirectory>G:\minecraft plugins</outputDirectory>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -61,10 +78,6 @@
     </build>
 
     <repositories>
-        <repository>
-            <id>nightexpress-releases</id>
-            <url>https://repo.nightexpressdev.com/releases</url>
-        </repository>
 
         <repository>
             <id>skript-releases</id>
@@ -113,12 +126,12 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>su.nightexpress.coinsengine</groupId>
-            <artifactId>CoinsEngine</artifactId>
-            <version>2.5.0</version>
-            <scope>provided</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>su.nightexpress.coinsengine</groupId>-->
+<!--            <artifactId>CoinsEngine</artifactId>-->
+<!--            <version>2.5.0</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>com.github.SkriptLang</groupId>
@@ -128,9 +141,9 @@
         </dependency>
 
         <dependency>
-            <groupId>dev.folia</groupId>
-            <artifactId>folia-api</artifactId>
-            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.21.8-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
@@ -232,26 +245,26 @@
         <dependency>
             <groupId>com.willfp</groupId>
             <artifactId>libreforge</artifactId>
-            <version>4.73.0</version>
+            <version>4.76.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libraries/libreforge.jar</systemPath>
         </dependency>
 
-        <dependency>
-            <groupId>fr.maxlego08.zauctionhouse</groupId>
-            <artifactId>zAuctionHouseV3</artifactId>
-            <version>3.2.1.2</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/zAuctionHouse.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>fr.maxlego08.zauctionhouse</groupId>-->
+<!--            <artifactId>zAuctionHouseV3</artifactId>-->
+<!--            <version>3.2.1.2</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/zAuctionHouse.jar</systemPath>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.edwardbelt.edprison</groupId>
-            <artifactId>EdPrison</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/EdPrison.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.edwardbelt.edprison</groupId>-->
+<!--            <artifactId>EdPrison</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/EdPrison.jar</systemPath>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.black_ixx</groupId>
@@ -260,29 +273,29 @@
             <scope>provided</scope>
         </dependency>
         
-        <dependency>
-            <groupId>me.realized</groupId>
-            <artifactId>tokenmanager</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/TokenManager.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.realized</groupId>-->
+<!--            <artifactId>tokenmanager</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/TokenManager.jar</systemPath>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>me.sedattr.deluxeauctionsredis</groupId>
-            <artifactId>deluxeauctionsredis</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/DeluxeAuctionsRedis.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.sedattr.deluxeauctionsredis</groupId>-->
+<!--            <artifactId>deluxeauctionsredis</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/DeluxeAuctionsRedis.jar</systemPath>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>me.qKing12.RoyaleEconomy</groupId>
-            <artifactId>royaleeconomy</artifactId>
-            <version>3.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libraries/RoyaleEconomy.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.qKing12.RoyaleEconomy</groupId>-->
+<!--            <artifactId>royaleeconomy</artifactId>-->
+<!--            <version>3.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/libraries/RoyaleEconomy.jar</systemPath>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>me.qKing12.AuctionMaster</groupId>
