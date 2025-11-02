@@ -38,7 +38,11 @@ import java.util.Map;
 
 @SuppressWarnings("ConstantConditions")
 public class DeluxeAuctions extends JavaPlugin {
-    @Getter private static DeluxeAuctions instance;
+    private static DeluxeAuctions instance;
+
+    public static DeluxeAuctions getInstance() {
+        return instance;
+    }
 
     public YamlConfiguration economyFile;
     public YamlConfiguration menusFile;
